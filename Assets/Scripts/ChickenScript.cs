@@ -8,6 +8,8 @@ public class ChickenScript : MonoBehaviour
     {
         StartCoroutine(SpawmEgg());   
         //StartCoroutine() : hàm chạy 
+        
+        
     }
 
     // Update is called once per frame
@@ -28,5 +30,16 @@ public class ChickenScript : MonoBehaviour
 
         }
     }
+    
+    // Xử lý khi va chạm với vật thể đặc (Collision)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Nếu gà trúng bất kỳ bức tường nào có thẻ "B"
+        if (collision.gameObject.CompareTag("B"))
+        {
+            Destroy(gameObject); 
+        }
+    }
 
+   
 }

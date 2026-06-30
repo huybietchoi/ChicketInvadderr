@@ -25,5 +25,7 @@ public class BulletScript : MonoBehaviour
             Destroy(gameObject); // Xóa viên đạn ngay lập tức
         }
     }
+    
+   
 
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Egg
+  - B
   layers:
   - Default
   - TransparentFX
